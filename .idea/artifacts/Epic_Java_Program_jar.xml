@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Epic Java Program:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Epic_Java_Program_jar</output-path>
+    <root id="archive" name="Epic Java Program.jar">
+      <element id="module-output" name="Epic Java Program" />
+    </root>
+  </artifact>
+</component>
