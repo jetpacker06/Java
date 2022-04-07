@@ -2,7 +2,7 @@
   <artifact type="jar" name="Epic Java Program:jar2">
     <output-path>$PROJECT_DIR$/out/artifacts/Epic_Java_Program_jar2</output-path>
     <root id="archive" name="Epic Java Program.jar">
-      <element id="module-output" name="Epic Java Program" />
+      <element id="module-output" name="Java" />
     </root>
   </artifact>
 </component>

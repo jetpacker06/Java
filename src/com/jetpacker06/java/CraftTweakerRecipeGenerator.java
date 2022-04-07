@@ -2,7 +2,7 @@ package com.jetpacker06.java;
 
 import java.util.Scanner;
 
-public class RecipeGen {
+public class CraftTweakerRecipeGenerator {
     public static void pickRecipeType() {
         P.s("Enter the number of your desired recipe type.");
         String[] recipeTypesList = {"5. Melting"};
@@ -12,12 +12,12 @@ public class RecipeGen {
         Scanner typeScanner = new Scanner(System.in);
         switch (typeScanner.nextLine()) {
             case "5":
-                RecipeGen.genMelting();
+                CraftTweakerRecipeGenerator.genMelting();
                 break;
         }
     }
     public static void genMelting() {
-        boolean hasByproduct = false;
+
         Scanner inputScanner = new Scanner(System.in);
         P.s("Enter the item you want to melt in the following format: minecraft:stick");
         String meltingItem = inputScanner.nextLine();
@@ -30,7 +30,8 @@ public class RecipeGen {
         P.s("Enter the duration in ticks, 20 ticks is one second.");
         int duration = inputScanner.nextInt();
         P.s("Foundry byproduct? Y or N");
-        if (inputScanner.nextLine().toLowerCase() == "y") {
+        boolean hasByproduct = inputScanner.nextLine().toLowerCase() == "y";
+        if (hasByproduct) {
             hasByproduct = true;
             P.s("Enter your desired byproduct fluid in the following format: minecraft:water");
             String[] byproductFluid = {inputScanner.nextLine(), "0"};

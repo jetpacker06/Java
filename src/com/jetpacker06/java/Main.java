@@ -34,7 +34,7 @@ public class Main {
                     TeachToCountToTen.teachToCountToTen();
                     break;
                 case "8":
-                    RecipeGen.pickRecipeType();
+                    CraftTweakerRecipeGenerator.pickRecipeType();
                 default:
                     System.out.println("Invalid input.");
             }
