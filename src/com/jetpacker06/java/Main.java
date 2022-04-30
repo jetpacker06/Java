@@ -5,7 +5,17 @@ public class Main {
         boolean dontexit = true;
         do {
             System.out.println("Enter the number that corresponds to the program you would like to run.");
-            String[] programsArrayList = {"1. Exit program", "2. Number Matcher", "3. Average/Mean Absolute Deviation Calculator", "4. Area Calculator", "5. Celsius to Fahrenheit", "6. Fahrenheit to Celsius", "7. I Teach Myself To Count", "8. CraftTweaker script generator"};
+            String[] programsArrayList = {
+                    "1. Exit program",
+                    "2. Number Matcher",
+                    "3. Average/Mean Absolute Deviation Calculator",
+                    "4. Area Calculator",
+                    "5. Celsius to Fahrenheit",
+                    "6. Fahrenheit to Celsius",
+                    "7. I Teach Myself To Count",
+                    "8. CraftTweaker script generator",
+                    "9. Calculate an exponent"
+            };
             for (int i = 0; i < programsArrayList.length; i++) {
                 System.out.println(programsArrayList[i]);
             }
@@ -17,24 +27,28 @@ public class Main {
                     dontexit = false;
                     break;
                 case "2":
-                    RollDiceUntilComboReached.rollDice();
+                    Methods.rollDice();
                     break;
                 case "3":
-                    FindAverage.findAverage();
+                    Methods.findAverage();
                     break;
                 case "4":
-                    FindArea.findArea();
+                    Methods.findArea();
                     break;
                 case "5":
-                    TemperatureConvert.cToF();
+                    Methods.cToF();
                     break;
                 case "6":
-                    TemperatureConvert.fToC();
+                    Methods.fToC();
+                    break;
                 case "7":
-                    TeachToCountToTen.teachToCountToTen();
+                    Methods.teachToCountToTen();
                     break;
                 case "8":
-                    CraftTweakerRecipeGenerator.pickRecipeType();
+                    Methods.pickRecipeType();
+                case "9":
+                    Methods.exponentCalc();
+                    break;
                 default:
                     System.out.println("Invalid input.");
             }
