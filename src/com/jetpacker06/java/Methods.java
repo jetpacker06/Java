@@ -12,7 +12,7 @@ public class Methods {
         Scanner typeScanner = new Scanner(System.in);
         switch (typeScanner.nextLine()) {
             case "5":
-                Methods.genMelting();
+                genMelting();
                 break;
         }
     }
@@ -200,5 +200,18 @@ public class Methods {
             result *= base;
         }
         P.f(result);
+    }
+    public static void factorialCalc() {
+        Scanner s = new Scanner(System.in);
+        P.s("Enter a whole number.");
+        int output = 1, input = s.nextInt(), i = 1;
+        while (i < input + 1) {
+            output = output * i;
+            i++;
+        }
+        if (output == 0 & input > 0) {
+            P.s("Surpassed the integer limit.");
+        }
+        P.i(output);
     }
 }

@@ -14,7 +14,8 @@ public class Main {
                     "6. Fahrenheit to Celsius",
                     "7. I Teach Myself To Count",
                     "8. CraftTweaker script generator",
-                    "9. Calculate an exponent"
+                    "9. Calculate an exponent",
+                    "10. Calculate a factorial"
             };
             for (int i = 0; i < programsArrayList.length; i++) {
                 System.out.println(programsArrayList[i]);
@@ -48,6 +49,9 @@ public class Main {
                     Methods.pickRecipeType();
                 case "9":
                     Methods.exponentCalc();
+                    break;
+                case "10":
+                    Methods.factorialCalc();
                     break;
                 default:
                     System.out.println("Invalid input.");
